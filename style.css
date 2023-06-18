@@ -1,0 +1,764 @@
+/* common style start here */
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style-type: none;
+   text-decoration: none;
+   outline: 0;
+   font-weight: 400; 
+
+}
+
+html{
+   scroll-behavior: smooth;
+   font-size: 62.5%;
+   background-color: #fafafa;
+    /* font-family: 'Italianno', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+   background-color: #fff;
+   width: 120rem;
+   max-width: 100%;
+   margin: auto;
+   box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4 , -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+/* common style end here */
+
+
+/* nav style start here */
+header{
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   min-height: 5vh;
+}
+
+
+#nav{
+   text-align: center;
+   background-color: black;
+}
+
+.logo{
+   color: #fff;
+   font-size: 4rem;
+   margin: 1rem;
+   padding: 5px;
+   border: 1px solid white;
+   border-radius: 5px;
+      margin: 0;
+   
+}
+
+
+.nav-link li{
+   margin: 5px;
+   padding: 5px;
+   cursor: pointer;
+}
+
+.nav-link a{
+   font-size: 15px;
+   color: white;
+}
+
+.nav-link li:hover{
+   background-color: gray;
+}
+#nav::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+
+/* nav style end here */
+
+
+/* banner style start here */
+
+#banner-section{
+   text-align: center;
+   margin-top: 20px;
+   padding: 5px;
+   
+}
+
+
+.banner-data h1{
+   background-color: black;
+   color: white;
+   margin: 0 auto;
+   font-size: 2rem;
+   font-family: 'Roboto', sans-serif;
+   padding: 10px;
+   width: 250px;
+}
+
+.banner-data{
+   padding: 10px;
+}
+.banner-data p{
+   margin-top: 20px;
+   font-size: 1.2rem;
+   text-align: justify;
+}
+
+.banner-img{
+   padding: 20px 0;
+}
+
+.banner-img img{
+   max-width: 100%;
+   border: black 1px solid;
+}
+
+
+#banner-section::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+/* banner style end here */
+
+
+/* about me style start here */
+
+#about-me{
+   text-align: center;
+   padding: 20px;
+   background-color: #8b8888;
+}
+
+#about-me h1{
+   font-family: 'Italianno';
+   font-size: 3.5rem;
+   color: rgb(17, 16, 16);
+   font-weight: 1000;
+}
+
+.card{
+   background-color: #c4c4c4;
+   padding: 10px;
+   max-width: 26rem;
+   box-shadow: 0.1rem 0.1rem 0.1rem #1f1e1e , -0.1rem 0rem 0.1rem #1e1d1d;
+   margin: 4rem auto;
+   height: 28rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: 0.4s;
+}
+
+.card-heading h2{
+   font-size: 3rem;
+   font-family: 'Italianno', cursive;
+   font-weight: bold;
+   padding-bottom: 1.5rem;
+}
+
+.card-data p{
+   font-size: 1.5rem;
+   text-align: justify;
+   padding-top: 10px;
+}
+
+.but1{
+   border: none;
+   font-size: 1.6rem;
+   margin-top: 2rem;
+   padding: .8rem 2rem;
+   text-transform: uppercase;
+   border: 1px solid black;
+   border-radius: 5px;
+   background-color: rgba(248, 248, 13, 0.742);
+   
+}
+
+.but1:hover{
+   cursor: pointer;
+   background-color: rgba(166, 166, 18, 0.742);
+}
+
+.card:hover{
+   transform: scale(1.1);
+}
+
+
+#about-me::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+/* about me style start here */
+
+
+/* arcives style start here */
+
+.arcives{
+   width: 100%;
+   text-align: center;
+   padding: 20px 10px;
+   border-top: 0.1rem solid;
+   border-bottom: 0.1rem solid;
+   margin: 3rem auto;
+
+}
+
+#arcives{
+   margin: 5rem auto;
+   text-align: center;
+}
+
+.ab1{
+   font-size: 5rem;
+   font-family: 'Italianno', cursive;
+   font-weight: 300;
+}
+
+.arcives li{
+   margin: 2rem 2rem;
+}
+
+.arcives img{
+   width: 100%;
+   border: 0.1rem solid;
+   border-radius: 0.5rem;
+   transition: 0.4s;
+}
+
+.arcives img:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.arcives ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.arcives li{
+   margin: 0 5px;
+}
+
+.arcives::after{
+   clear: both;
+   content: '';
+   display: table;
+}
+
+/* arcives style start here */
+
+/* blog post style start here */
+
+#blog-posts{
+   padding: 10px;
+
+}
+
+.blog-post{
+   display: flex;
+   flex-direction: row;
+   margin: 2rem auto;
+   box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0.0rem 0.1rem #222;
+   transition: .4s;
+   width: 90%;
+}
+
+.blog-post:hover{
+   transform: scale(1.1);
+}
+
+#blog-posts h1{
+   text-align: center;
+   font-size: 5rem;
+   margin: 3rem auto;
+   font-family: 'Italianno', cursive;
+   font-weight: 300;
+}
+
+.blog-img{
+   flex-basis: 17rem;
+   flex: 1;
+}
+
+.blog-img img{
+   width: 100%;
+   height: 100%;
+}
+
+.blog-discription{
+   padding: 5px 10px;
+   flex: 2;
+}
+
+
+.blog-discription h2{
+   font-size: 1.7rem;
+}
+
+.blog-discription h3{
+   font-size: 1.3rem;
+
+}
+
+.blog-discription p{
+   font-size: .9rem;
+   text-align: justify;
+}
+
+.blog-btn{
+   border: none;
+   font-size: 1.4rem;
+   margin: 5px 0 0 0;
+   padding: 3px;
+   border-radius: 5px;
+   width: 10rem;
+   background-color: rgb(206, 206, 6);
+}
+
+.blog-btn:hover{
+   background-color: rgb(148, 148, 3);
+   cursor: pointer;
+   border: 1px solid;
+}
+
+/* blog post style end here */
+
+/* contact me style start here */
+
+#contact-me{
+   min-height: 90vh;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 4rem 0;
+   background-color: #6e6b6b;
+   color: white;
+}
+
+#contact-me h1{
+   margin-bottom: 10rem;
+   font-size: 5rem;
+   font-family: 'Italianno', cursive;
+}
+
+
+.contact-form{
+   min-width: 70%;
+   padding: 1rem;
+   box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0.0rem 0.1rem #222;
+}
+
+.contact{
+   margin: 1rem auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+label{
+   flex: .3;
+   font-size: 1.1rem;
+}
+
+input , textarea{
+   flex: .7;
+   padding: 1rem 0.5rem;
+   font-size: 1.5rem;
+   border-radius: 0.3rem;
+   border: none;
+}
+
+textarea{
+   resize: none;
+}
+
+.contact-btn{
+   border: none;
+   width: 30%;
+   font-size: 1.5rem;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   
+}
+
+.contact-btn:hover{
+   cursor: pointer;
+   background-color: rgb(181, 177, 177);
+}
+
+
+
+/* contact me style end here */
+
+
+
+/* footer style start here */
+
+footer{
+   background-color: black;
+   min-height: 5vh;
+   color: white;
+   text-align: center;
+   padding: 1rem;
+}
+
+footer p{
+   font-size: 1.1rem;
+}
+
+.icone{
+   color: white;
+   font-size: 1.5rem;
+   margin: 1rem;
+   transition: .4s;
+}
+
+footer ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.icone:hover{
+   transform: scale(1.2);
+}
+
+/* footer style end here */
+
+
+  /* style for sm screen */
+  @media (min-width: 576px) {
+
+/* nav style start here */
+
+#nav{
+   display: flex;
+   align-items: center;
+}
+.logo1{
+   text-align: left;
+}
+
+.nav-link{
+   text-align: right;
+
+}
+
+.nav-link li{
+   display: inline-block;
+}
+
+/* banner style start here */
+
+#banner-section{
+   display: flex;
+   align-items: center;
+   height: 70vh;
+}
+
+.banner-data h1{
+   margin: 0;
+}
+
+/* banner style end here */
+
+/* about me style start here */
+
+
+
+.card{
+   max-width: 24rem;
+}
+
+/* about me style end here */
+
+
+/* arcives style start here */
+
+.arcives ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.arcives li{
+   margin: 0 10px;
+}
+
+
+/* arcives style end here */
+
+/* blog post style start here */
+
+.blog-post{
+   height: 10rem;
+   width: 45rem;
+}
+
+/* blog post style end here */
+
+/* contact me style start here */
+
+.contact-form{
+   min-width: 40rem;
+}
+
+/* contact me style start here */
+
+/* footer style start here */
+
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* footer style start here */
+
+
+/* nav style end here */
+
+
+   .col-sm-1 {width: 8.33%;}
+   .col-sm-2 {width: 16.66%;}
+   .col-sm-3 {width: 25%;}
+   .col-sm-4 {width: 33.33%;}
+   .col-sm-5 {width: 41.66%;}
+   .col-sm-6 {width: 50%;}
+   .col-sm-7 {width: 58.33%;}
+   .col-sm-8 {width: 66.66%;}
+   .col-sm-9 {width: 75%;}
+   .col-sm-10 {width: 83.33%;}
+   .col-sm-11 {width: 91.66%;}
+   .col-sm-12 {width: 100%;}
+
+   [class*="col-sm-"]{
+      float: left;
+   }
+}
+
+
+
+
+ /* style for sm screen */
+ @media (min-width: 776px) {
+
+/* nav style start here */
+
+#nav{
+   display: flex;
+   align-items: center;
+}
+.logo1{
+   text-align: left;
+}
+
+.nav-link{
+   text-align: right;
+
+}
+
+.nav-link li{
+   display: inline-block;
+}
+
+/* banner style start here */
+
+#banner-section{
+   display: flex;
+   align-items: center;
+   height: 80vh;
+}
+
+.banner-data h1{
+   margin: 0;
+}
+
+/* banner style end here */
+
+/* about me style start here */
+
+.card{
+   max-width: 23rem;
+}
+
+/* about me style end here */
+
+
+/* arcives style start here */
+
+.arcives ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.arcives li{
+   margin: 0 15px;
+}
+
+
+/* arcives style end here */
+
+/* footer style start here */
+
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* footer style start here */
+
+
+/* nav style end here */
+
+
+   .col-md-1 {width: 8.33%;}
+   .col-md-2 {width: 16.66%;}
+   .col-md-3 {width: 25%;}
+   .col-md-4 {width: 33.33%;}
+   .col-md-5 {width: 41.66%;}
+   .col-md-6 {width: 50%;}
+   .col-md-7 {width: 58.33%;}
+   .col-md-8 {width: 66.66%;}
+   .col-md-9 {width: 75%;}
+   .col-md-10 {width: 83.33%;}
+   .col-md-11 {width: 91.66%;}
+   .col-md-12 {width: 100%;}
+  
+   [class*="col-md"]{
+      float: left;
+   }
+}
+
+
+
+/* style for lg screen */
+@media (min-width: 992px) {
+
+/* nav style start here */
+
+#nav{
+   display: flex;
+   align-items: center;
+   position: sticky;
+}
+.logo1{
+   text-align: left;
+}
+
+.nav-link{
+   text-align: right;
+   margin-right: 50px;
+}
+
+.nav-link li{
+   display: inline-block;
+}
+
+
+/* nav style end here */
+
+
+/* banner style start here */
+
+#banner-section{
+   display: flex;
+   align-items: center;
+   height: 90vh;
+}
+
+.banner-data h1{
+   margin: 0;
+}
+
+/* banner style end here */
+
+/* about me style start here */
+
+.card{
+   margin: 2rem auto;
+   max-width: 26rem;
+}
+
+/* about me style end here */
+
+/* arcives style start here */
+
+.arcives ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.arcives li{
+   margin: 0 15px;
+}
+
+
+/* arcives style end here */
+
+/* blog post style start here */
+
+.blog{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+/* blog post style end here */
+
+/* footer style start here */
+
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* footer style start here */
+
+
+.col-lg-1 {width: 8.33%;}
+.col-lg-2 {width: 16.66%;}
+.col-lg-3 {width: 25%;}
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-lg-9 {width: 75%;}
+.col-lg-10 {width: 83.33%;}
+.col-lg-11 {width: 91.66%;}
+.col-lg-12 {width: 100%;}
+
+[class*="col-lg"]{
+   float: left;
+}
+
+
+}
